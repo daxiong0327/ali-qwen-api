@@ -19,7 +19,7 @@ func TestProxySendRequest(t *testing.T) {
 			},
 		},
 	}
-	res, err := ProxySendRequest(args)
+	res, err := SendRequest(args)
 	assert.Equal(t, nil, err)
 	assert.NotEqual(t, nil, res)
 	assert.NotEqual(t, "", res.RequestId)

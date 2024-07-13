@@ -73,7 +73,7 @@ type RequestArgs struct {
 	ApiKey  string `json:"api_key"`
 }
 
-func ProxySendRequest(args *RequestArgs) (*Response, error) {
+func SendRequest(args *RequestArgs) (*Response, error) {
 	client := req.C()
 	req3 := client.Post(args.BaseUrl)
 	dataBytes, err := json.Marshal(args.Request)
