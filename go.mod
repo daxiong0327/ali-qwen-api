@@ -1,4 +1,4 @@
-module github.com/daxiong0327/aliyun-qwen-api
+module github.com/daxiong0327/ali-qwen-api
 
 go 1.22.4
 
